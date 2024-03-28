@@ -1,0 +1,15 @@
+version: 2
+sources:
+- name: fivetran_bigcommerce
+    database: fivetran_ingest
+    schema: bigcommerce
+    loader: fivetran
+    tables:
+      - name: orders
+      
+  - name: fivetran_shopify
+    database: fivetran_ingest
+    schema: shopify
+    loader: fivetran
+    tables:
+      - name: orders
